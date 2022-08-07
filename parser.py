@@ -10,13 +10,14 @@ curser = conn.cursor()
 fileDic = fileNameParse.listDir(fileNameParse.FOLDER_PATH)
 print(fileDic)
 
-# Latest tube_sn test
+# Latest tube_sn's test
 curser.execute("SELECT * FROM InvivoMeasurement,InvitroMeasurements  WHERE tube_sn=? AND (`experiment_id`,`end_time`) IN" +
                " (SELECT experiment_id,MAX(end_time) FROM InvivoMeasurements,InvitroMeasurements GROUP BY `experiment_id`)",(fileDic["tube_sn"],))
 latest_test = curser.fetchall()[0][0]
 
 
 # Iterate measurement id:
+# TODO: Check if Measurement Table is empty to initialize iterator.
 curser.execute("SELECT MAX(measurement_id) FROM InvivoMeasurements ")
 curr_id = curser.fetchall()[0][0]
 print(curr_id)

@@ -14,7 +14,7 @@ import json
 
 if __name__ == '__main__':
 
-    cef_path = "perses-main-data-new CEF/data/new CEF/1-Set_1-TD_469866-BOA-PD-TD#_469866-Staph.Aureus_48_0-4h_Rep-1a-Exp_0-PA_0_2022-06-14_11-14-51_1_16eV.cef"
+    cef_path = "perses-main-data-new CEF/data/new CEF/4-Set_1-TD_469869-BOA-PD-TD#_469869-Staph.Aureus_48_0-4h_Rep-1d-Exp_0-PA_0_2022-06-14_13-17-15_1_70eV_2022_06_21_11_00_38.cef"
 
     print_results = True
 

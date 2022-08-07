@@ -3,7 +3,7 @@ import os
 FOLDER_PATH = r'C:\\Users\\natanel\\Desktop\\GC-MS\\perser\\perses-main-data-new CEF\\data\\new CEF\\test'
 
 
-def listDir(dir): # NEED TO RECIEVE FILES PARTH OR NAME
+def listDir(dir): # NEED TO RECIEVE FILES PATH OR NAME AS PARAM (?)
 
     fileNames = os.listdir(dir)
     name, type = os.path.splitext(fileNames[0])
