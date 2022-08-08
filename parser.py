@@ -6,52 +6,85 @@ conn = sqlite3.connect('RespirationScan_markes.db')
 curser = conn.cursor()
 
 
+##
 # ON FOLDER CHANGE
-fileDic = fileNameParse.listDir(fileNameParse.FOLDER_PATH)
-print(fileDic)
+def getFileDic():
+    Dic = fileNameParse.listDir(fileNameParse.FOLDER_PATH)
+    print(Dic)
+    return Dic
+
 
 # Latest tube_sn's test
-curser.execute("SELECT * FROM InvivoMeasurement,InvitroMeasurements  WHERE tube_sn=? AND (`experiment_id`,`end_time`) IN" +
-               " (SELECT experiment_id,MAX(end_time) FROM InvivoMeasurements,InvitroMeasurements GROUP BY `experiment_id`)",(fileDic["tube_sn"],))
-latest_test = curser.fetchall()[0][0]
+def getLatestTestByTubeSn(tube_sn):
+    curser.execute("""SELECT * 
+                        FROM InvivoMeasurement,InvitroMeasurements
+                             WHERE tube_sn=%s AND (`experiment_id`,`end_time`) IN
+                                (SELECT experiment_id,MAX(end_time) 
+                                    FROM InvivoMeasurements,InvitroMeasurements GROUP BY `experiment_id`)""",
+                                          (tube_sn,))
+    return curser.fetchall()[0][0]
 
 
 # Iterate measurement id:
-# TODO: Check if Measurement Table is empty to initialize iterator.
-curser.execute("SELECT MAX(measurement_id) FROM InvivoMeasurements ")
-curr_id = curser.fetchall()[0][0]
-print(curr_id)
-measurement_id = curr_id + 1
+def getMeasurementId():
+    curser.execute("SELECT MAX(id) FROM Measurement ")
+    curr_id = curser.fetchall()[0][0]
+    measurement_id = (curr_id + 1) if curr_id else 1 # Check if Measurement Table is empty to initialize iterator
+    print(measurement_id)
+
 
 # Create MEASUREMENT
-curser.execute("""CREATE TABLE Measurement (
-                       id int,
-                       type_id int,
-                       era_id int,
-                       time_analysis TIMESTAMP,
-                       internal_standards_set_id int,
-                       analyzer_id int,
-                       injection_pos int,
-                       chromatogram varchar(255),
-                       cef varchar(255)
-)""")
+def createMeasurementTable():
+    curser.execute("""CREATE TABLE Measurement (
+                           id int NOT NULL PRIMARY KEY,
+                           type_id int,
+                           era_id int,
+                           time_analysis TIMESTAMP,
+                           internal_standards_set_id int,
+                           analyzer_id int,
+                           chromatogram varchar(255),
+                           cef varchar(255)
+    )""")
 
 
 # Insert new MEASUREMENT (to be done)
-curser.execute("INSERT INTO Measurement VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s)",(measurement_id,))
+def insertMeasurement(measurement_id,type_id,era_id,time_analysis,internal_st,analyzer_id,injection_pos,chromatogram,cef):
+    curser.execute("INSERT INTO Measurement VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s)",
+                   (measurement_id,type_id,era_id,time_analysis,internal_st,analyzer_id,injection_pos,chromatogram,cef))
 
 
+# Update latest test's measurement_id (cross reference)
+def updateLatestTest(table_name,measurement_id,test_id):
+     curser.execute("""UPDATE %s SET measurement_id = %s
+                WHERE experiment_id = %s""",
+                    (table_name,measurement_id,test_id))
 
-# Update latest test's measurement_id
-curser.execute("""UPDATE %s SET measurement_id = %s
-            WHERE experiment_id = %s  
-""",) # (InvivoMeasurements\InvitroMeasurements, measurement_id, latest_test[experiment_id])
+
+def getMeasurementByTubeSn(tube_sn):
+    curser.execute("""SELECT * 
+                         FROM Measurement
+                              WHERE tube_sn=%s""",
+                   (tube_sn,))
+    return curser.fetchall()[0][0]
 
 
+# For each tube_sn => get measurement by sn => get latest invivo/invitro test =>
+# check if test time stamp is updated to date by checking time tamp =>
+# if not , update relevant fields and cross-reference.
+def cross_reference_maintenance(tube_sn_list):
+    for tube_sn in tube_sn_list:
+        measurement = getMeasurementByTubeSn(tube_sn)
+        inv_test = getLatestTestByTubeSn(tube_sn)
+        if measurement.time_stamp < inv_test.time_stamp:
+            measurement.time_stamp = inv_test.time_stamp
+            measurement.type_id = inv_test.type_id;
+            inv_test.measurement_id = measurement.id
 
-#curser.execute("SELECT * FROM InvivoMeasurements WHERE tube_id=?",(2,))
+
 #conn.commit()
 #conn.close()
 
+if __name__ == '__main__':
+    fileDic = getFileDic()
 
 
