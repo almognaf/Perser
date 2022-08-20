@@ -1,6 +1,8 @@
 import os
 
-FOLDER_PATH = r'C:\\Users\\natanel\\Desktop\\GC-MS\\perser\\perses-main-data-new CEF\\data\\new CEF\\test'
+
+# Folder Path
+FOLDER_PATH = r'C:\\Users\\alnaf\\Perser\\perses-main-data-new CEF\\data\\FileName2Parse'
 
 
 def listDir(dir): # NEED TO RECIEVE FILES PATH OR NAME AS PARAM (?)

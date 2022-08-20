@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d9e65f5-3496-4d5c-8d2a-3718cffedd19" name="Changes" comment="">
+    <list default="true" id="9d9e65f5-3496-4d5c-8d2a-3718cffedd19" name="Changes" comment="Changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fileNameParse.py" beforeDir="false" afterPath="$PROJECT_DIR$/fileNameParse.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/parsecef.py" beforeDir="false" afterPath="$PROJECT_DIR$/parsecef.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/parser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/perses-main-data-new CEF/data/new CEF/1-Set_1-TD_469866-BOA-PD-TD#_469866-Staph.Aureus_48_0-4h_Rep-1a-Exp_0-PA_0_2022-06-14_11-14-51_1_70eV.cef" beforeDir="false" afterPath="$PROJECT_DIR$/perses-main-data-new CEF/data/FileName2Parse/[tube_sn]-[time_analysis]-[analyzer_id]-[injection_pos]-[internal_standards_set]-OvedNehedar.cef" afterDir="false" />
+    </list>
+    <list id="b9bb8514-8c48-490a-a1c7-d785b2e3db8c" name="Changes by natit" comment="">
+      <change beforePath="$PROJECT_DIR$/fileNameParse.py" beforeDir="false" afterPath="$PROJECT_DIR$/fileNameParse.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +20,16 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/fileNameParse.py">
+      <ranges>
+        <range start1="2" end1="3" start2="2" end2="4" changelist="9d9e65f5-3496-4d5c-8d2a-3718cffedd19" />
+        <range start1="16" end1="17" start2="17" end2="17" changelist="b9bb8514-8c48-490a-a1c7-d785b2e3db8c" />
+        <range start1="18" end1="19" start2="18" end2="27" changelist="b9bb8514-8c48-490a-a1c7-d785b2e3db8c" />
+        <range start1="22" end1="24" start2="30" end2="34" changelist="b9bb8514-8c48-490a-a1c7-d785b2e3db8c" />
+      </ranges>
+    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -27,15 +40,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/alnaf/Perser/parser.py",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/alnaf/Perser/parser.py&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Python.parser">
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\alnaf\Perser\perses-main-data-new CEF\data\FileName2Parse" />
+    </key>
+  </component>
+  <component name="RunManager">
     <configuration name="parsecef" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Perser" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -92,6 +110,14 @@
       <option name="presentableId" value="Default" />
       <updated>1659898381088</updated>
     </task>
+    <task id="LOCAL-00001" summary="Changes">
+      <created>1659902879292</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1659902879292</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -104,5 +130,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes" />
   </component>
 </project>
