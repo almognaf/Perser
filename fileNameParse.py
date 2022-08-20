@@ -1,11 +1,11 @@
 import os
 
-
 # Folder Path
 FOLDER_PATH = r'C:\\Users\\alnaf\\Perser\\perses-main-data-new CEF\\data\\FileName2Parse'
 
 
-def listDir(dir): # NEED TO RECIEVE FILES PATH OR NAME AS PARAM (?)
+# NEED TO RECIEVE FILES PATH OR NAME AS PARAM (?)
+def listDir(dir):
 
     fileNames = os.listdir(dir)
     name, type = os.path.splitext(fileNames[0])
