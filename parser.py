@@ -1,14 +1,23 @@
 import sqlite3
 import fileNameParse
 import parsecef
-
-conn = sqlite3.connect('RespirationScan_markes.db')
-curser = conn.cursor()
+import mysql.connector
 
 
-##
+import mysql.connector
+
+mydb = mysql.connector.connect(
+  host="localhost",
+  user="root",
+  password="lustersoul123",
+    database="respirationscan"
+)
+curser = mydb.cursor()
+
+
 # ON FOLDER CHANGE
 def getFileDic():
+    # "tube_sn","time_analysis","analyzer_id","injection_pos","injection_pos","not_sure":
     Dic = fileNameParse.listDir(fileNameParse.FOLDER_PATH)
     print(Dic)
     return Dic
@@ -31,6 +40,7 @@ def getMeasurementId():
     curr_id = curser.fetchall()[0][0]
     measurement_id = (curr_id + 1) if curr_id else 1 # Check if Measurement Table is empty to initialize iterator
     print(measurement_id)
+    return measurement_id;
 
 
 # Create MEASUREMENT
@@ -51,6 +61,14 @@ def createMeasurementTable():
 def insertMeasurement(measurement_id,type_id,era_id,time_analysis,internal_st,analyzer_id,injection_pos,chromatogram,cef):
     curser.execute("INSERT INTO Measurement VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s)",
                    (measurement_id,type_id,era_id,time_analysis,internal_st,analyzer_id,injection_pos,chromatogram,cef))
+    mydb.commit();
+
+
+def insertMeasurementTEST(measurement_id,time_analysis,analyzer_id,injection_pos,internal_st):
+    curser.execute("""INSERT INTO Measurement (id,time_analysis,analyzer_id,injection_pos,internal_standards_set_id) 
+                               VALUES (%s,%s,%s,%s,%s)""",
+                   (measurement_id, time_analysis, analyzer_id, injection_pos, internal_st))
+    mydb.commit();
 
 
 # Update latest test's measurement_id (cross reference)
@@ -86,5 +104,13 @@ def cross_reference_maintenance(tube_sn_list):
 
 if __name__ == '__main__':
     fileDic = getFileDic()
+    currID = getMeasurementId()
+
+    insertMeasurementTEST(currID,fileDic["time_analysis"],fileDic["analyzer_id"],fileDic["injection_pos"],fileDic["internal_standards_set"])
+    mydb.commit();
+
+    print(curser.fetchall())
+
+    #curser.execute("""INSERT TO measurement (""")
 
 

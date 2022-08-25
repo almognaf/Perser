@@ -1,6 +1,18 @@
 import os
+from datetime import datetime
 
-FOLDER_PATH = r'C:\\Users\\natanel\\Desktop\\GC-MS\\perser\\perses-main-data-new CEF\\data\\new CEF\\test'
+FOLDER_PATH = r'C:\\Users\\natanel\\Desktop\\Perser\\perses-main-data-new CEF\\data\\test'
+
+
+def get_time_analysis(date_time_str):
+    # FORMAT: YYYY_MM_DD_HH_MM_SS
+    fixedTime = date_time_str.split('_')
+    fixedTime[0] = (fixedTime[0])[2:4]
+    timeToStr = fixedTime[2] + '/' + fixedTime[1] + '/' + fixedTime[0] + ' ' + fixedTime[3] + ':' + fixedTime[4] + ':' + fixedTime[5]
+    timestamp = datetime.strptime(timeToStr, '%d/%m/%y %H:%M:%S')
+    return timestamp
+
+
 
 
 def listDir(dir): # NEED TO RECIEVE FILES PATH OR NAME AS PARAM (?)
@@ -10,10 +22,10 @@ def listDir(dir): # NEED TO RECIEVE FILES PATH OR NAME AS PARAM (?)
     fileArray = name.split('-')
     fileDic = {
         "tube_sn": fileArray[0],
-        "analyzer_id": fileArray[1],
-        "internal_standards_set_id": fileArray[2],
+        "time_analysis": get_time_analysis(fileArray[1]),
+        "analyzer_id": fileArray[2],
         "injection_pos": fileArray[3],
-        "time_analysis": fileArray[4],
+        "internal_standards_set": fileArray[4],
         "not_sure": fileArray[5],
     }
     return fileDic;
@@ -21,4 +33,4 @@ def listDir(dir): # NEED TO RECIEVE FILES PATH OR NAME AS PARAM (?)
 
 if __name__ == '__main__':
     fileDic = listDir(FOLDER_PATH)
-    print(fileDic)
+    print(fileDic["time_analysis"])
