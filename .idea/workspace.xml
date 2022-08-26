@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d9e65f5-3496-4d5c-8d2a-3718cffedd19" name="Changes" comment="Changes">
+    <list default="true" id="9d9e65f5-3496-4d5c-8d2a-3718cffedd19" name="Changes" comment="updated DB + SCRIPT works (DB must contain FOREIGN KEYS before creating measurement )">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fileNameParse.py" beforeDir="false" afterPath="$PROJECT_DIR$/fileNameParse.py" afterDir="false" />
-    </list>
-    <list id="b9bb8514-8c48-490a-a1c7-d785b2e3db8c" name="Changes by natit" comment="">
-      <change beforePath="$PROJECT_DIR$/fileNameParse.py" beforeDir="false" afterPath="$PROJECT_DIR$/fileNameParse.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/parser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/perses-main-data-new CEF/data/test/2-2018_09_19_01_55_19-2-2-2-2.cef" beforeDir="false" afterPath="$PROJECT_DIR$/perses-main-data-new CEF/data/test/3-2018_09_19_01_55_19-3-3-3-3.cef" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,17 +16,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/fileNameParse.py">
-      <ranges>
-        <range start1="2" end1="3" start2="2" end2="2" changelist="9d9e65f5-3496-4d5c-8d2a-3718cffedd19" />
-        <range start1="7" end1="8" start2="6" end2="8" changelist="9d9e65f5-3496-4d5c-8d2a-3718cffedd19" />
-        <range start1="18" end1="19" start2="18" end2="18" changelist="b9bb8514-8c48-490a-a1c7-d785b2e3db8c" />
-        <range start1="20" end1="21" start2="19" end2="28" changelist="b9bb8514-8c48-490a-a1c7-d785b2e3db8c" />
-        <range start1="24" end1="26" start2="31" end2="34" changelist="b9bb8514-8c48-490a-a1c7-d785b2e3db8c" />
-      </ranges>
-    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -43,16 +30,58 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/alnaf/Perser/parser.py&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/natanel/Desktop/Perser/fileNameParse.py&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\alnaf\Perser\perses-main-data-new CEF\data\FileName2Parse" />
+      <recent name="C:\Users\natanel\Desktop\Perser\perses-main-data-new CEF" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.parser">
+    <configuration name="fileNameParser" type="PythonConfigurationType" factoryName="Python">
+      <module name="Perser" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\natanel\AppData\Local\Programs\Python\Python39\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/fileNameParse.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="folderMonitor" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\natanel\AppData\Local\Programs\Python\Python39\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="C:\Users\natanel\Desktop\Perser\perses-main-data-new CEF\folderMonitor.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="parsecef" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Perser" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -81,7 +110,7 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\alnaf\anaconda3\python.exe" />
+      <option name="SDK_HOME" value="C:\Users\natanel\AppData\Local\Programs\Python\Python39\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -98,6 +127,8 @@
     <list>
       <item itemvalue="Python.parsecef" />
       <item itemvalue="Python.parser" />
+      <item itemvalue="Python.fileNameParser" />
+      <item itemvalue="Python.folderMonitor" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -109,19 +140,19 @@
       <option name="presentableId" value="Default" />
       <updated>1659898381088</updated>
     </task>
-    <task id="LOCAL-00001" summary="Changes">
-      <created>1659902879292</created>
+    <task id="LOCAL-00001" summary="updated DB + SCRIPT works (DB must contain FOREIGN KEYS before creating measurement )">
+      <created>1661431129173</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1659902879292</updated>
+      <updated>1661431129173</updated>
     </task>
-    <task id="LOCAL-00002" summary="Changes">
-      <created>1660997389148</created>
+    <task id="LOCAL-00002" summary="updated DB + SCRIPT works (DB must contain FOREIGN KEYS before creating measurement )">
+      <created>1661431156692</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1660997389148</updated>
+      <updated>1661431156692</updated>
     </task>
     <option name="localTasksCounter" value="3" />
     <servers />
@@ -138,7 +169,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes" />
+    <MESSAGE value="updated DB + SCRIPT works (DB must contain FOREIGN KEYS before creating measurement )" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated DB + SCRIPT works (DB must contain FOREIGN KEYS before creating measurement )" />
   </component>
 </project>
