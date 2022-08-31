@@ -10,16 +10,16 @@ def get_time_analysis(date_time_str):
     fixedTime[0] = (fixedTime[0])[2:4]
     timeToStr = fixedTime[2] + '/' + fixedTime[1] + '/' + fixedTime[0] + ' ' + fixedTime[3] + ':' + fixedTime[4] + ':' + fixedTime[5]
     timestamp = datetime.strptime(timeToStr, '%d/%m/%y %H:%M:%S')
+
     return timestamp
 
 
+def check():
+    print("did")
 
+def listDir(fileName): # NEED TO RECIEVE FILES PATH OR NAME AS PARAM (?)
 
-def listDir(dir): # NEED TO RECIEVE FILES PATH OR NAME AS PARAM (?)
-
-    fileNames = os.listdir(dir)
-    name, type = os.path.splitext(fileNames[0])
-    fileArray = name.split('-')
+    fileArray = fileName.split('-')
     fileDic = {
         "tube_sn": fileArray[0],
         "time_analysis": get_time_analysis(fileArray[1]),
