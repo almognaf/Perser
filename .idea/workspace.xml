@@ -5,14 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d9e65f5-3496-4d5c-8d2a-3718cffedd19" name="Changes" comment="updated DB + SCRIPT works (DB must contain FOREIGN KEYS before creating measurement )">
+      <change afterPath="$PROJECT_DIR$/Classes/AlgorithmMatch.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Classes/Compound.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Classes/InternalStandard.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Classes/Spectrum.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/parser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/perses-main-data-new CEF/data/test/2-2018_09_19_01_55_19-2-2-2-2.cef" beforeDir="false" afterPath="$PROJECT_DIR$/perses-main-data-new CEF/data/test/3-2018_09_19_01_55_19-3-3-3-3.cef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parsecef.py" beforeDir="false" afterPath="$PROJECT_DIR$/parsecef.py" afterDir="false" />
     </list>
+    <list id="14968a1c-3f07-4b35-8a63-b8ca56750876" name="Changes by natit" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -21,25 +33,28 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2D2Xv6ZeFcFEauoOgqNMraEwBA0" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/natanel/Desktop/Perser/fileNameParse.py&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "last_opened_file_path": "C:/Users/natanel/Desktop/Perser/fileNameParse.py",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\natanel\Desktop\Perser\perses-main-data-new CEF" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.parser">
+  <component name="RunManager" selected="Python.parsecef">
     <configuration name="fileNameParser" type="PythonConfigurationType" factoryName="Python">
       <module name="Perser" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -162,7 +177,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
