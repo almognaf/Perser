@@ -1,24 +1,19 @@
-import sys
 import time
 
 from watchdog.events import FileSystemEventHandler
 from watchdog.observers import Observer
 
-import fileNameParse
-
 
 # TODO: Make event handle parsing,Check for edge cases
+from Main_Perser import *
+
 
 class MyEventHandler(FileSystemEventHandler):
 
     def on_created(self, event):
         file_name = str(event.src_path)
-        name = file_name.split('/')
-        # TODO: Check if name is valid
-        fixed_name = (name[6])[0:len(name[6]) - 1]
-        print(fixed_name)
-        file_dic = fileNameParse.list_dir(fixed_name)
-        print(file_dic)
+        initiate = MainPerser(file_name)
+        print(initiate.filename)
 
 
 path = 'C:/Users/alnaf/Perser/perses-main-data-new CEF/data/test'
