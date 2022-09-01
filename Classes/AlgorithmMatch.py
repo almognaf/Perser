@@ -2,7 +2,6 @@ from parser import curser
 
 
 def get_algorithm_id():
-
     curser.execute("SELECT MAX(id) FROM AlgorithmMatch ")
 
     if len(curser.fetchall()) != 0:
@@ -12,7 +11,6 @@ def get_algorithm_id():
         algo_id = 1
 
     return algo_id
-
 
 
 class AlgorithmMatch:

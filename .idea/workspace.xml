@@ -4,16 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d9e65f5-3496-4d5c-8d2a-3718cffedd19" name="Changes" comment="updated DB + SCRIPT works (DB must contain FOREIGN KEYS before creating measurement )">
-      <change afterPath="$PROJECT_DIR$/Classes/AlgorithmMatch.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Classes/Compound.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Classes/InternalStandard.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Classes/Spectrum.py" afterDir="false" />
+    <list default="true" id="9d9e65f5-3496-4d5c-8d2a-3718cffedd19" name="Changes" comment="4 Classes has been added to populate in more accurate way">
+      <change afterPath="$PROJECT_DIR$/Classes/Measurment.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/perses-main-data-new CEF/data/test/3-2018_09_19_01_55_19-3-3-3-4.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Perser.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Perser.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parsecef.py" beforeDir="false" afterPath="$PROJECT_DIR$/parsecef.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classes/AlgorithmMatch.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/AlgorithmMatch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classes/Compound.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Compound.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileNameParse.py" beforeDir="false" afterPath="$PROJECT_DIR$/fileNameParse.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/folderMonitor.py" beforeDir="false" afterPath="$PROJECT_DIR$/folderMonitor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/perses-main-data-new CEF/data/test/3-2018_09_19_01_55_19-3-3-3-3.txt" beforeDir="false" />
     </list>
-    <list id="14968a1c-3f07-4b35-8a63-b8ca56750876" name="Changes by natit" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,6 +29,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -40,21 +43,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/natanel/Desktop/Perser/fileNameParse.py&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "last_opened_file_path": "C:/Users/natanel/Desktop/Perser/fileNameParse.py",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.notifications"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\natanel\Desktop\Perser\perses-main-data-new CEF" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.parsecef">
+  <component name="RunManager" selected="Python.folderMonitor">
     <configuration name="fileNameParser" type="PythonConfigurationType" factoryName="Python">
       <module name="Perser" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -77,18 +80,18 @@
       <method v="2" />
     </configuration>
     <configuration name="folderMonitor" type="PythonConfigurationType" factoryName="Python">
+      <module name="Perser" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\natanel\AppData\Local\Programs\Python\Python39\python.exe" />
+      <option name="SDK_HOME" value="C:\Users\alnaf\PycharmProjects\pythonProject\venv\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="" />
-      <option name="SCRIPT_NAME" value="C:\Users\natanel\Desktop\Perser\perses-main-data-new CEF\folderMonitor.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/folderMonitor.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -140,10 +143,10 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.fileNameParser" />
-      <item itemvalue="Python.folderMonitor" />
       <item itemvalue="Python.parsecef" />
       <item itemvalue="Python.parser" />
+      <item itemvalue="Python.fileNameParser" />
+      <item itemvalue="Python.folderMonitor" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -169,7 +172,21 @@
       <option name="project" value="LOCAL" />
       <updated>1661431156692</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="4 Classes has been added to populate in more accurate way">
+      <created>1661962846504</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1661962846504</updated>
+    </task>
+    <task id="LOCAL-00004" summary="4 Classes has been added to populate in more accurate way">
+      <created>1661962955630</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1661962955630</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -197,6 +214,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="updated DB + SCRIPT works (DB must contain FOREIGN KEYS before creating measurement )" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated DB + SCRIPT works (DB must contain FOREIGN KEYS before creating measurement )" />
+    <MESSAGE value="4 Classes has been added to populate in more accurate way" />
+    <option name="LAST_COMMIT_MESSAGE" value="4 Classes has been added to populate in more accurate way" />
   </component>
 </project>

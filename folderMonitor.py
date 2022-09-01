@@ -1,33 +1,27 @@
 import sys
 import time
-import logging
-from watchdog.observers import Observer
-from watchdog.events import LoggingEventHandler, FileSystemEventHandler
-import fileNameParse
-from datetime import datetime
-import parsecef
 
-#TODO: Make event handle parsing,Check for edge cases
+from watchdog.events import FileSystemEventHandler
+from watchdog.observers import Observer
+
+import fileNameParse
+
+
+# TODO: Make event handle parsing,Check for edge cases
 
 class MyEventHandler(FileSystemEventHandler):
 
     def on_created(self, event):
-        fileName = str(event.src_path)
-        name = fileName.split('\\')
+        file_name = str(event.src_path)
+        name = file_name.split('/')
         # TODO: Check if name is valid
-        fixedName = (name[4])[0:len(name[4])-1]
-        print(fixedName)
-        fileDic = fileNameParse.listDir(fixedName)
-        print(fileDic)
+        fixed_name = (name[6])[0:len(name[6]) - 1]
+        print(fixed_name)
+        file_dic = fileNameParse.list_dir(fixed_name)
+        print(file_dic)
 
 
-
-
-
-
-
-
-path = sys.argv[1] if len(sys.argv) > 1 else '.'
+path = 'C:/Users/alnaf/Perser/perses-main-data-new CEF/data/test'
 print(path)
 event_handler = MyEventHandler()
 observer = Observer()

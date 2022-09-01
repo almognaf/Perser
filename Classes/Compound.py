@@ -1,8 +1,3 @@
-import sqlite3
-import fileNameParse
-import parsecef
-import mysql.connector
-
 from parser import curser
 
 
