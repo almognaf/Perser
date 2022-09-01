@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d9e65f5-3496-4d5c-8d2a-3718cffedd19" name="Changes" comment="4 Classes has been added to populate in more accurate way">
-      <change afterPath="$PROJECT_DIR$/Classes/Measurment.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/perses-main-data-new CEF/data/test/3-2018_09_19_01_55_19-3-3-3-4.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Perser.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Perser.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/AlgorithmMatch.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/AlgorithmMatch.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/Compound.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Compound.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fileNameParse.py" beforeDir="false" afterPath="$PROJECT_DIR$/fileNameParse.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/folderMonitor.py" beforeDir="false" afterPath="$PROJECT_DIR$/folderMonitor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/perses-main-data-new CEF/data/test/3-2018_09_19_01_55_19-3-3-3-3.txt" beforeDir="false" />
-    </list>
+    <list default="true" id="9d9e65f5-3496-4d5c-8d2a-3718cffedd19" name="Changes" comment="Changed the monitoring to be only on a specific folder&#10;+&#10;Created more classes&#10;+&#10;Changed the code to be more clear" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -186,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661962955630</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Changed the monitoring to be only on a specific folder&#10;+&#10;Created more classes&#10;+&#10;Changed the code to be more clear">
+      <created>1662054829032</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1662054829032</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -215,6 +211,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="updated DB + SCRIPT works (DB must contain FOREIGN KEYS before creating measurement )" />
     <MESSAGE value="4 Classes has been added to populate in more accurate way" />
-    <option name="LAST_COMMIT_MESSAGE" value="4 Classes has been added to populate in more accurate way" />
+    <MESSAGE value="Changed the monitoring to be only on a specific folder&#10;+&#10;Created more classes&#10;+&#10;Changed the code to be more clear" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed the monitoring to be only on a specific folder&#10;+&#10;Created more classes&#10;+&#10;Changed the code to be more clear" />
   </component>
 </project>
