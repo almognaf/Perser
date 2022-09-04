@@ -21,6 +21,7 @@ def check():
 def list_dir(file_name):  # NEED TO RECIEVE FILES PATH OR NAME AS PARAM (?)
     measurment = Measurment()
     file_array = file_name.split('-')
+    print(file_array)
     file_dict = dict(tube_sn=file_array[0], time_analysis=get_time_analysis(file_array[1]), analyzer_id=file_array[2],
                      injection_pos=file_array[3], internal_standards_set=file_array[4], not_sure=file_array[5])
 
