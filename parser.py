@@ -30,12 +30,22 @@ def getFileDic():
 # Latest tube_sn's test
 def get_typeid(tube_sn, invivo=[], invitro=[]):
     curser.execute("""SELECT * 
-                        FROM InvivoMeasurement,InvitroMeasurements
-                             WHERE tube_sn=%s AND (`experiment_id`,`end_time`) IN
-                                (SELECT experiment_id,MAX(end_time) 
-                                    FROM InvivoMeasurements,InvitroMeasurements GROUP BY `experiment_id`)""",
+                        FROM InvitroMeasurements,
+                             WHERE tube_sn=%s AND (`time_collection_end`) IN
+                                (SELECT MAX(time_collection_end) 
+                                    FROM InvitroMeasurements )""",
                    (tube_sn,))
-    return curser.fetchall()[0][0]
+
+    invitro = curser.fetchall()[0][0]
+    curser.execute("""SELECT * 
+                        FROM InvivoMeasurement,
+                             WHERE tube_sn=%s AND (`time_collection_end`) IN
+                                (SELECT MAX(time_collection_end) 
+                                    FROM InvivoMeasurements)""",
+                   (tube_sn,))
+    invivo = curser.fetchall()[0][0] # check what column is time_start
+    res = invivo[0] > invitro[0] ? False : True   # If invivo's time > invitro's time : return 0, else 1
+    return res
 
 
 
