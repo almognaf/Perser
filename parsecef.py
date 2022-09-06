@@ -29,7 +29,7 @@ class ParseCEF:
             rt = float(location["rt"])
             a = int(location["a"])
             y = int(location["y"])
-            curr_compound = Classes.Compound(curr_id, m, rt, a)
+            self.curr_compound = Classes.Compound(curr_id, m, rt, a)
             # get formula, name, probability
             mol = compound.find("Results/Molecule")
             curr_compound_id = curr_compound.id
@@ -73,6 +73,15 @@ class ParseCEF:
             json_tuples = json.dumps(spec_tuples)
 
             # print collected compound information
+            self.rt = rt
+            self.x = x
+            self.y = y
+            self.m - m
+            self.a = a
+            self.molecule_formula = formula
+            self.molecule_name = name
+            self.molecule_probability = probability
+            self.cas = cas
             print(f"m: {m}, rt: {rt}, a: {a}, y: {y}")
             print(f"{formula}, {name}, cas: {cas} prob: {probability}")
             print(f"x: {x}, y: {y}")

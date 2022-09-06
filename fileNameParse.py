@@ -1,5 +1,5 @@
 from datetime import datetime
-from Classes.Measurment import *
+from Classes.Measurement import *
 
 FOLDER_PATH = 'C:/Users/alnaf/Perser/perses-main-data-new CEF/data/test'
 

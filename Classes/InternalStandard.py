@@ -32,12 +32,12 @@ class InternalStandard:
         :return: returns nothing
         """
         # #TODO: How to populate
-        self.id = id
+        self.id = id # iterate id (not sure)
         self.name = name
         self.analyzer_id = analyzer_id
-        self.retention_time = retention_time
-        self.retention_time_stdev = retention_time_stdev
-        self.cas_rn = cas_rn
+        self.retention_time = retention_time  # rt in parscef
+        self.retention_time_stdev = retention_time_stdev # standard deviation
+        self.cas_rn = cas_rn # cas id
 
 
 class InternalStandardSet:
@@ -53,4 +53,4 @@ class InternalStandardSet:
 
         # # TODO: How to populate
         self.id = id
-        self.internal_standard_id = internal_standard_id
+        self.internal_standard_id = internal_standard_id #TODO
