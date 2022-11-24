@@ -4,18 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d9e65f5-3496-4d5c-8d2a-3718cffedd19" name="Changes" comment="Restructured the code for better readability &#10;+&#10;Added a main class for initiating">
+    <list default="true" id="9d9e65f5-3496-4d5c-8d2a-3718cffedd19" name="Changes" comment="Some Fixes 04/Sep/2022">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main_Perser.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main_Perser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fileNameParse.py" beforeDir="false" afterPath="$PROJECT_DIR$/fileNameParse.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/parser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/perses-main-data-new CEF/data/test/3-2018_09_19_01_55_19-3-3-3-4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/perses-main-data-new CEF/data/test/3-2018_09_19_01_55_19-3-3-3-4.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xlsxtojson.py" beforeDir="false" afterPath="$PROJECT_DIR$/xlsxtojson.py" afterDir="false" />
     </list>
-    <list id="23f7ce61-84fa-42f5-a2ff-abfdca376022" name="Changes by natit" comment="">
-      <change beforePath="$PROJECT_DIR$/Classes/Measurment.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Measurment.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main_Perser.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main_Perser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/parser.py" afterDir="false" />
-    </list>
+    <list id="23f7ce61-84fa-42f5-a2ff-abfdca376022" name="Changes by natit" comment="Some Fixes 04/Sep/2022" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,35 +26,6 @@
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/parser.py">
-      <ranges>
-        <range start1="24" end1="27" start2="24" end2="27" changelist="9d9e65f5-3496-4d5c-8d2a-3718cffedd19" />
-        <range start1="30" end1="31" start2="30" end2="31" changelist="9d9e65f5-3496-4d5c-8d2a-3718cffedd19" />
-        <range start1="32" end1="36" start2="32" end2="36" changelist="23f7ce61-84fa-42f5-a2ff-abfdca376022" />
-        <range start1="37" end1="38" start2="37" end2="48" changelist="23f7ce61-84fa-42f5-a2ff-abfdca376022" />
-        <range start1="40" end1="40" start2="50" end2="68" changelist="9d9e65f5-3496-4d5c-8d2a-3718cffedd19" />
-        <range start1="46" end1="47" start2="74" end2="75" changelist="9d9e65f5-3496-4d5c-8d2a-3718cffedd19" />
-        <range start1="69" end1="70" start2="97" end2="98" changelist="9d9e65f5-3496-4d5c-8d2a-3718cffedd19" />
-        <range start1="78" end1="79" start2="106" end2="107" changelist="9d9e65f5-3496-4d5c-8d2a-3718cffedd19" />
-        <range start1="86" end1="87" start2="114" end2="115" changelist="9d9e65f5-3496-4d5c-8d2a-3718cffedd19" />
-        <range start1="94" end1="95" start2="122" end2="123" changelist="9d9e65f5-3496-4d5c-8d2a-3718cffedd19" />
-        <range start1="102" end1="103" start2="130" end2="131" changelist="9d9e65f5-3496-4d5c-8d2a-3718cffedd19" />
-        <range start1="107" end1="108" start2="135" end2="136" changelist="9d9e65f5-3496-4d5c-8d2a-3718cffedd19" />
-        <range start1="115" end1="119" start2="143" end2="144" changelist="9d9e65f5-3496-4d5c-8d2a-3718cffedd19" />
-        <range start1="142" end1="143" start2="167" end2="168" changelist="9d9e65f5-3496-4d5c-8d2a-3718cffedd19" />
-        <range start1="145" end1="146" start2="170" end2="171" changelist="9d9e65f5-3496-4d5c-8d2a-3718cffedd19" />
-        <range start1="153" end1="161" start2="178" end2="186" changelist="9d9e65f5-3496-4d5c-8d2a-3718cffedd19" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/Main_Perser.py">
-      <ranges>
-        <range start1="3" end1="5" start2="3" end2="5" changelist="23f7ce61-84fa-42f5-a2ff-abfdca376022" />
-        <range start1="11" end1="12" start2="11" end2="12" changelist="9d9e65f5-3496-4d5c-8d2a-3718cffedd19" />
-        <range start1="21" end1="22" start2="21" end2="27" changelist="9d9e65f5-3496-4d5c-8d2a-3718cffedd19" />
-      </ranges>
-    </file>
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -72,22 +37,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "TODO_SCOPE": "All Places",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "last_opened_file_path": "C:/Users/natanel/Desktop/Perser/fileNameParse.py",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.notifications"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;TODO_SCOPE&quot;: &quot;All Places&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/natanel/Desktop/Perser/fileNameParse.py&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.notifications&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\natanel\Desktop\Perser\perses-main-data-new CEF" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.folderMonitor">
+  <component name="RunManager">
     <configuration name="fileNameParser" type="PythonConfigurationType" factoryName="Python">
       <module name="Perser" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -173,10 +138,10 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.parsecef" />
-      <item itemvalue="Python.parser" />
       <item itemvalue="Python.fileNameParser" />
       <item itemvalue="Python.folderMonitor" />
+      <item itemvalue="Python.parsecef" />
+      <item itemvalue="Python.parser" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -237,7 +202,21 @@
       <option name="project" value="LOCAL" />
       <updated>1662065296022</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Some Fixes 04/Sep/2022">
+      <created>1662320196953</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1662320196953</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Some Fixes 04/Sep/2022">
+      <created>1662320226255</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1662320226255</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -268,6 +247,8 @@
     <MESSAGE value="4 Classes has been added to populate in more accurate way" />
     <MESSAGE value="Changed the monitoring to be only on a specific folder&#10;+&#10;Created more classes&#10;+&#10;Changed the code to be more clear" />
     <MESSAGE value="Restructured the code for better readability &#10;+&#10;Added a main class for initiating" />
-    <option name="LAST_COMMIT_MESSAGE" value="Restructured the code for better readability &#10;+&#10;Added a main class for initiating" />
+    <MESSAGE value="Changes by natit" />
+    <MESSAGE value="Some Fixes 04/Sep/2022" />
+    <option name="LAST_COMMIT_MESSAGE" value="Some Fixes 04/Sep/2022" />
   </component>
 </project>
