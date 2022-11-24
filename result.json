@@ -1,0 +1,386 @@
+[
+    {
+        "File": "321-Set_15-TD_4698312022-09-01_19-38-23_1",
+        "Method": "BenchTOF_H2 (1)",
+        "Tube": 51,
+        "Tube_Number": 469831,
+        "Thermal_Cycles": 22,
+        "Desorb_Start_Time": "2022/09/01 19:47:03"
+    },
+    {
+        "File": "322-Set_15-TD_4698322022-09-01_20-04-24_1",
+        "Method": "BenchTOF_H2 (1)",
+        "Tube": 52,
+        "Tube_Number": 469832,
+        "Thermal_Cycles": 21,
+        "Desorb_Start_Time": "2022/09/01 20:25:35"
+    },
+    {
+        "File": "323-Set_15-TD_4698332022-09-01_20-43-01_1",
+        "Method": "BenchTOF_H2 (1)",
+        "Tube": 53,
+        "Tube_Number": 469833,
+        "Thermal_Cycles": 24,
+        "Desorb_Start_Time": "2022/09/01 21:03:45"
+    },
+    {
+        "File": "324-Set_15-TD_4698362022-09-01_21-21-05_1",
+        "Method": "BenchTOF_H2 (1)",
+        "Tube": 54,
+        "Tube_Number": 469836,
+        "Thermal_Cycles": 27,
+        "Desorb_Start_Time": "2022/09/01 21:41:50"
+    },
+    {
+        "File": "325-Set_15-TD_4698372022-09-01_21-59-17_1",
+        "Method": "BenchTOF_H2 (1)",
+        "Tube": 55,
+        "Tube_Number": 469837,
+        "Thermal_Cycles": 29,
+        "Desorb_Start_Time": "2022/09/01 22:20:27"
+    },
+    {
+        "File": "326-Set_15-TD_4698382022-09-01_22-37-48_1",
+        "Method": "BenchTOF_H2 (1)",
+        "Tube": 56,
+        "Tube_Number": 469838,
+        "Thermal_Cycles": 25,
+        "Desorb_Start_Time": "2022/09/01 22:58:33"
+    },
+    {
+        "File": "327-Set_15-TD_4698392022-09-01_23-16-02_1",
+        "Method": "BenchTOF_H2 (1)",
+        "Tube": 57,
+        "Tube_Number": 469839,
+        "Thermal_Cycles": 28,
+        "Desorb_Start_Time": "2022/09/01 23:37:17"
+    },
+    {
+        "File": "328-Set_15-TD_4698422022-09-01_23-54-40_1",
+        "Method": "BenchTOF_H2 (1)",
+        "Tube": 58,
+        "Tube_Number": 469842,
+        "Thermal_Cycles": 18,
+        "Desorb_Start_Time": "2022/09/02 00:15:56"
+    },
+    {
+        "File": "329-Set_15-TD_4698432022-09-02_00-33-24_1",
+        "Method": "BenchTOF_H2 (1)",
+        "Tube": 59,
+        "Tube_Number": 469843,
+        "Thermal_Cycles": 22,
+        "Desorb_Start_Time": "2022/09/02 00:54:34"
+    },
+    {
+        "File": "330-Set_15-TD_4698442022-09-02_01-11-58_1",
+        "Method": "BenchTOF_H2 (1)",
+        "Tube": 60,
+        "Tube_Number": 469844,
+        "Thermal_Cycles": 30,
+        "Desorb_Start_Time": "2022/09/02 01:33:11"
+    },
+    {
+        "File": "331-Set_15-TD_4698452022-09-02_01-50-31_1",
+        "Method": "BenchTOF_H2 (1)",
+        "Tube": 61,
+        "Tube_Number": 469845,
+        "Thermal_Cycles": 28,
+        "Desorb_Start_Time": "2022/09/02 02:12:41"
+    },
+    {
+        "File": "332-Set_15-TD_4698462022-09-02_02-30-11_1",
+        "Method": "BenchTOF_H2 (1)",
+        "Tube": 62,
+        "Tube_Number": 469846,
+        "Thermal_Cycles": 30,
+        "Desorb_Start_Time": "2022/09/02 02:50:53"
+    },
+    {
+        "File": "333-Set_15-TD_4698472022-09-02_03-08-17_1",
+        "Method": "BenchTOF_H2 (1)",
+        "Tube": 63,
+        "Tube_Number": 469847,
+        "Thermal_Cycles": 26,
+        "Desorb_Start_Time": "2022/09/02 03:29:31"
+    },
+    {
+        "File": "334-Set_15-TD_4698492022-09-02_03-46-56_1",
+        "Method": "BenchTOF_H2 (1)",
+        "Tube": 64,
+        "Tube_Number": 469849,
+        "Thermal_Cycles": 24,
+        "Desorb_Start_Time": "2022/09/02 04:08:13"
+    },
+    {
+        "File": "335-Set_15-TD_4698502022-09-02_04-25-33_1",
+        "Method": "BenchTOF_H2 (1)",
+        "Tube": 65,
+        "Tube_Number": 469850,
+        "Thermal_Cycles": 22,
+        "Desorb_Start_Time": "2022/09/02 04:46:49"
+    },
+    {
+        "File": "336-Set_15-TD_4698512022-09-02_05-04-12_1",
+        "Method": "BenchTOF_H2 (1)",
+        "Tube": 66,
+        "Tube_Number": 469851,
+        "Thermal_Cycles": 22,
+        "Desorb_Start_Time": "2022/09/02 05:25:22"
+    },
+    {
+        "File": "337-Set_15-TD_4698522022-09-02_05-42-42_1",
+        "Method": "BenchTOF_H2 (1)",
+        "Tube": 67,
+        "Tube_Number": 469852,
+        "Thermal_Cycles": 11,
+        "Desorb_Start_Time": null
+    },
+    {
+        "File": "338-Set_15-TD_4698532022-09-02_06-05-13_1",
+        "Method": "BenchTOF_H2 (1)",
+        "Tube": 68,
+        "Tube_Number": 469853,
+        "Thermal_Cycles": 28,
+        "Desorb_Start_Time": "2022/09/02 06:30:26"
+    },
+    {
+        "File": "339-Set_15-TD_4698542022-09-02_06-47-50_1",
+        "Method": "BenchTOF_H2 (1)",
+        "Tube": 69,
+        "Tube_Number": 469854,
+        "Thermal_Cycles": 25,
+        "Desorb_Start_Time": "2022/09/02 07:09:01"
+    },
+    {
+        "File": "340-Set_15-TD_4698592022-09-02_07-26-26_1",
+        "Method": "BenchTOF_H2 (1)",
+        "Tube": 70,
+        "Tube_Number": 469859,
+        "Thermal_Cycles": 19,
+        "Desorb_Start_Time": "2022/09/02 07:47:41"
+    },
+    {
+        "File": "341-Set_15-TD_4698642022-09-02_08-04-53_1",
+        "Method": "BenchTOF_H2 (1)",
+        "Tube": 71,
+        "Tube_Number": 469864,
+        "Thermal_Cycles": 14,
+        "Desorb_Start_Time": "2022/09/02 08:27:01"
+    },
+    {
+        "File": "342-Set_15-TD_4698812022-09-02_08-44-21_1",
+        "Method": "BenchTOF_H2 (1)",
+        "Tube": 72,
+        "Tube_Number": 469881,
+        "Thermal_Cycles": 23,
+        "Desorb_Start_Time": "2022/09/02 09:05:35"
+    },
+    {
+        "File": "343-Set_15-TD_4698822022-09-02_09-23-02_1",
+        "Method": "BenchTOF_H2 (1)",
+        "Tube": 73,
+        "Tube_Number": 469882,
+        "Thermal_Cycles": 26,
+        "Desorb_Start_Time": "2022/09/02 09:44:13"
+    },
+    {
+        "File": "344-Set_15-TD_4698832022-09-02_10-01-35_1",
+        "Method": "BenchTOF_H2 (1)",
+        "Tube": 74,
+        "Tube_Number": 469883,
+        "Thermal_Cycles": 25,
+        "Desorb_Start_Time": "2022/09/02 10:22:46"
+    },
+    {
+        "File": "345-Set_16-TD_4598082022-09-02_10-40-08_1",
+        "Method": "BenchTOF_H2 (1)",
+        "Tube": 75,
+        "Tube_Number": null,
+        "Thermal_Cycles": null,
+        "Desorb_Start_Time": null
+    },
+    {
+        "File": "346-Set_16-TD_4598092022-09-02_11-02-32_1",
+        "Method": "BenchTOF_H2 (1)",
+        "Tube": 76,
+        "Tube_Number": null,
+        "Thermal_Cycles": null,
+        "Desorb_Start_Time": null
+    },
+    {
+        "File": "347-Set_16-TD_4598102022-09-02_11-29-38_1",
+        "Method": "BenchTOF_H2 (1)",
+        "Tube": 77,
+        "Tube_Number": 459808,
+        "Thermal_Cycles": 33,
+        "Desorb_Start_Time": "2022/09/02 11:54:49"
+    },
+    {
+        "File": "348-Set_16-TD_4598112022-09-02_12-12-22_1",
+        "Method": "BenchTOF_H2 (1)",
+        "Tube": 78,
+        "Tube_Number": 459809,
+        "Thermal_Cycles": 22,
+        "Desorb_Start_Time": "2022/09/02 12:33:33"
+    },
+    {
+        "File": "349-Set_16-TD_4598122022-09-02_12-50-56_1",
+        "Method": "BenchTOF_H2 (1)",
+        "Tube": 79,
+        "Tube_Number": 459810,
+        "Thermal_Cycles": 18,
+        "Desorb_Start_Time": "2022/09/02 13:12:10"
+    },
+    {
+        "File": "350-Set_16-TD_4598132022-09-02_13-29-30_1",
+        "Method": "BenchTOF_H2 (1)",
+        "Tube": 80,
+        "Tube_Number": 459811,
+        "Thermal_Cycles": 28,
+        "Desorb_Start_Time": "2022/09/02 13:50:19"
+    },
+    {
+        "File": "351-Set_16-TD_4598142022-09-02_14-07-44_1",
+        "Method": "BenchTOF_H2 (1)",
+        "Tube": 81,
+        "Tube_Number": 459812,
+        "Thermal_Cycles": 26,
+        "Desorb_Start_Time": "2022/09/02 14:29:20"
+    },
+    {
+        "File": "352-Set_16-TD_4598162022-09-02_14-46-48_1",
+        "Method": "BenchTOF_H2 (1)",
+        "Tube": 82,
+        "Tube_Number": 459813,
+        "Thermal_Cycles": 21,
+        "Desorb_Start_Time": "2022/09/02 15:07:31"
+    },
+    {
+        "File": "353-Set_16-TD_4598182022-09-02_15-25-02_1",
+        "Method": "BenchTOF_H2 (1)",
+        "Tube": 83,
+        "Tube_Number": 459814,
+        "Thermal_Cycles": 36,
+        "Desorb_Start_Time": "2022/09/02 15:46:14"
+    },
+    {
+        "File": "354-Set_16-TD_4598192022-09-02_16-03-44_1",
+        "Method": "BenchTOF_H2 (1)",
+        "Tube": 84,
+        "Tube_Number": 459816,
+        "Thermal_Cycles": 30,
+        "Desorb_Start_Time": "2022/09/02 16:24:55"
+    },
+    {
+        "File": "355-Set_16-TD_4598202022-09-02_16-42-23_1",
+        "Method": "BenchTOF_H2 (1)",
+        "Tube": 85,
+        "Tube_Number": 459818,
+        "Thermal_Cycles": 41,
+        "Desorb_Start_Time": "2022/09/02 17:03:36"
+    },
+    {
+        "File": "356-Set_16-TD_4598212022-09-02_17-21-05_1",
+        "Method": "BenchTOF_H2 (1)",
+        "Tube": 86,
+        "Tube_Number": 459819,
+        "Thermal_Cycles": 34,
+        "Desorb_Start_Time": "2022/09/02 17:42:16"
+    },
+    {
+        "File": "357-Set_16-TD_4598222022-09-02_17-59-41_1",
+        "Method": "BenchTOF_H2 (1)",
+        "Tube": 87,
+        "Tube_Number": 459820,
+        "Thermal_Cycles": 35,
+        "Desorb_Start_Time": "2022/09/02 18:20:56"
+    },
+    {
+        "File": "358-Set_16-TD_4598232022-09-02_18-38-32_1",
+        "Method": "BenchTOF_H2 (1)",
+        "Tube": 88,
+        "Tube_Number": 459821,
+        "Thermal_Cycles": 36,
+        "Desorb_Start_Time": "2022/09/02 18:59:47"
+    },
+    {
+        "File": "359-Set_16-TD_4598242022-09-02_19-17-16_1",
+        "Method": "BenchTOF_H2 (1)",
+        "Tube": 89,
+        "Tube_Number": 459822,
+        "Thermal_Cycles": 20,
+        "Desorb_Start_Time": "2022/09/02 19:37:59"
+    },
+    {
+        "File": "360-Set_16-TD_4598252022-09-02_19-55-36_1",
+        "Method": "BenchTOF_H2 (1)",
+        "Tube": 90,
+        "Tube_Number": 459823,
+        "Thermal_Cycles": 20,
+        "Desorb_Start_Time": "2022/09/02 20:16:47"
+    },
+    {
+        "File": "361-Set_16-TD_4598282022-09-02_20-34-10_1",
+        "Method": "BenchTOF_H2 (1)",
+        "Tube": 91,
+        "Tube_Number": 459824,
+        "Thermal_Cycles": 19,
+        "Desorb_Start_Time": "2022/09/02 20:56:17"
+    },
+    {
+        "File": "362-Set_16-TD_4598302022-09-02_21-13-39_1",
+        "Method": "BenchTOF_H2 (1)",
+        "Tube": 92,
+        "Tube_Number": 459825,
+        "Thermal_Cycles": 31,
+        "Desorb_Start_Time": "2022/09/02 21:34:25"
+    },
+    {
+        "File": "363-Set_16-TD_4598412022-09-02_21-51-59_1",
+        "Method": "BenchTOF_H2 (1)",
+        "Tube": 93,
+        "Tube_Number": 459837,
+        "Thermal_Cycles": 28,
+        "Desorb_Start_Time": "2022/09/02 22:13:13"
+    },
+    {
+        "File": "364-Set_16-TD_4598432022-09-02_22-30-44_1",
+        "Method": "BenchTOF_H2 (1)",
+        "Tube": 94,
+        "Tube_Number": 459830,
+        "Thermal_Cycles": 27,
+        "Desorb_Start_Time": "2022/09/02 22:51:32"
+    },
+    {
+        "File": "365-Set_16-TD_4598452022-09-02_23-08-56_1",
+        "Method": "BenchTOF_H2 (1)",
+        "Tube": 95,
+        "Tube_Number": 459841,
+        "Thermal_Cycles": 23,
+        "Desorb_Start_Time": "2022/09/02 23:30:09"
+    },
+    {
+        "File": "366-Set_16-TD_4487942022-09-02_23-47-40_1",
+        "Method": "BenchTOF_H2 (1)",
+        "Tube": 96,
+        "Tube_Number": 459843,
+        "Thermal_Cycles": 30,
+        "Desorb_Start_Time": "2022/09/03 00:08:28"
+    },
+    {
+        "File": "367-Set_16-TD_4487952022-09-03_00-26-00_1",
+        "Method": "BenchTOF_H2 (1)",
+        "Tube": 97,
+        "Tube_Number": 459845,
+        "Thermal_Cycles": 28,
+        "Desorb_Start_Time": "2022/09/03 00:46:43"
+    },
+    {
+        "File": "368-Set_16-TD_4487962022-09-03_01-04-11_1",
+        "Method": "BenchTOF_H2 (1)",
+        "Tube": 98,
+        "Tube_Number": 448794,
+        "Thermal_Cycles": 26,
+        "Desorb_Start_Time": "2022/09/03 01:24:57"
+    }
+]
