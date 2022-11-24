@@ -4,42 +4,90 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d9e65f5-3496-4d5c-8d2a-3718cffedd19" name="Changes" comment="updated DB + SCRIPT works (DB must contain FOREIGN KEYS before creating measurement )">
+    <list default="true" id="9d9e65f5-3496-4d5c-8d2a-3718cffedd19" name="Changes" comment="Restructured the code for better readability &#10;+&#10;Added a main class for initiating">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main_Perser.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main_Perser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileNameParse.py" beforeDir="false" afterPath="$PROJECT_DIR$/fileNameParse.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/parser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/perses-main-data-new CEF/data/test/2-2018_09_19_01_55_19-2-2-2-2.cef" beforeDir="false" afterPath="$PROJECT_DIR$/perses-main-data-new CEF/data/test/3-2018_09_19_01_55_19-3-3-3-3.cef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/perses-main-data-new CEF/data/test/3-2018_09_19_01_55_19-3-3-3-4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/perses-main-data-new CEF/data/test/3-2018_09_19_01_55_19-3-3-3-4.txt" afterDir="false" />
+    </list>
+    <list id="23f7ce61-84fa-42f5-a2ff-abfdca376022" name="Changes by natit" comment="">
+      <change beforePath="$PROJECT_DIR$/Classes/Measurment.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Measurment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main_Perser.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main_Perser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/parser.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/parser.py">
+      <ranges>
+        <range start1="24" end1="27" start2="24" end2="27" changelist="9d9e65f5-3496-4d5c-8d2a-3718cffedd19" />
+        <range start1="30" end1="31" start2="30" end2="31" changelist="9d9e65f5-3496-4d5c-8d2a-3718cffedd19" />
+        <range start1="32" end1="36" start2="32" end2="36" changelist="23f7ce61-84fa-42f5-a2ff-abfdca376022" />
+        <range start1="37" end1="38" start2="37" end2="48" changelist="23f7ce61-84fa-42f5-a2ff-abfdca376022" />
+        <range start1="40" end1="40" start2="50" end2="68" changelist="9d9e65f5-3496-4d5c-8d2a-3718cffedd19" />
+        <range start1="46" end1="47" start2="74" end2="75" changelist="9d9e65f5-3496-4d5c-8d2a-3718cffedd19" />
+        <range start1="69" end1="70" start2="97" end2="98" changelist="9d9e65f5-3496-4d5c-8d2a-3718cffedd19" />
+        <range start1="78" end1="79" start2="106" end2="107" changelist="9d9e65f5-3496-4d5c-8d2a-3718cffedd19" />
+        <range start1="86" end1="87" start2="114" end2="115" changelist="9d9e65f5-3496-4d5c-8d2a-3718cffedd19" />
+        <range start1="94" end1="95" start2="122" end2="123" changelist="9d9e65f5-3496-4d5c-8d2a-3718cffedd19" />
+        <range start1="102" end1="103" start2="130" end2="131" changelist="9d9e65f5-3496-4d5c-8d2a-3718cffedd19" />
+        <range start1="107" end1="108" start2="135" end2="136" changelist="9d9e65f5-3496-4d5c-8d2a-3718cffedd19" />
+        <range start1="115" end1="119" start2="143" end2="144" changelist="9d9e65f5-3496-4d5c-8d2a-3718cffedd19" />
+        <range start1="142" end1="143" start2="167" end2="168" changelist="9d9e65f5-3496-4d5c-8d2a-3718cffedd19" />
+        <range start1="145" end1="146" start2="170" end2="171" changelist="9d9e65f5-3496-4d5c-8d2a-3718cffedd19" />
+        <range start1="153" end1="161" start2="178" end2="186" changelist="9d9e65f5-3496-4d5c-8d2a-3718cffedd19" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/Main_Perser.py">
+      <ranges>
+        <range start1="3" end1="5" start2="3" end2="5" changelist="23f7ce61-84fa-42f5-a2ff-abfdca376022" />
+        <range start1="11" end1="12" start2="11" end2="12" changelist="9d9e65f5-3496-4d5c-8d2a-3718cffedd19" />
+        <range start1="21" end1="22" start2="21" end2="27" changelist="9d9e65f5-3496-4d5c-8d2a-3718cffedd19" />
+      </ranges>
+    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2D2Xv6ZeFcFEauoOgqNMraEwBA0" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/natanel/Desktop/Perser/fileNameParse.py&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TODO_SCOPE": "All Places",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "last_opened_file_path": "C:/Users/natanel/Desktop/Perser/fileNameParse.py",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.notifications"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\natanel\Desktop\Perser\perses-main-data-new CEF" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.parser">
+  <component name="RunManager" selected="Python.folderMonitor">
     <configuration name="fileNameParser" type="PythonConfigurationType" factoryName="Python">
       <module name="Perser" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -62,18 +110,18 @@
       <method v="2" />
     </configuration>
     <configuration name="folderMonitor" type="PythonConfigurationType" factoryName="Python">
+      <module name="Perser" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\natanel\AppData\Local\Programs\Python\Python39\python.exe" />
+      <option name="SDK_HOME" value="C:\Users\alnaf\PycharmProjects\pythonProject\venv\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="" />
-      <option name="SCRIPT_NAME" value="C:\Users\natanel\Desktop\Perser\perses-main-data-new CEF\folderMonitor.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/folderMonitor.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -154,7 +202,42 @@
       <option name="project" value="LOCAL" />
       <updated>1661431156692</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="4 Classes has been added to populate in more accurate way">
+      <created>1661962846504</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1661962846504</updated>
+    </task>
+    <task id="LOCAL-00004" summary="4 Classes has been added to populate in more accurate way">
+      <created>1661962955630</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1661962955630</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Changed the monitoring to be only on a specific folder&#10;+&#10;Created more classes&#10;+&#10;Changed the code to be more clear">
+      <created>1662054829032</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1662054829032</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Changed the monitoring to be only on a specific folder&#10;+&#10;Created more classes&#10;+&#10;Changed the code to be more clear">
+      <created>1662061246985</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1662061246985</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Restructured the code for better readability &#10;+&#10;Added a main class for initiating">
+      <created>1662065296022</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1662065296022</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -162,7 +245,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -170,6 +265,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="updated DB + SCRIPT works (DB must contain FOREIGN KEYS before creating measurement )" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated DB + SCRIPT works (DB must contain FOREIGN KEYS before creating measurement )" />
+    <MESSAGE value="4 Classes has been added to populate in more accurate way" />
+    <MESSAGE value="Changed the monitoring to be only on a specific folder&#10;+&#10;Created more classes&#10;+&#10;Changed the code to be more clear" />
+    <MESSAGE value="Restructured the code for better readability &#10;+&#10;Added a main class for initiating" />
+    <option name="LAST_COMMIT_MESSAGE" value="Restructured the code for better readability &#10;+&#10;Added a main class for initiating" />
   </component>
 </project>

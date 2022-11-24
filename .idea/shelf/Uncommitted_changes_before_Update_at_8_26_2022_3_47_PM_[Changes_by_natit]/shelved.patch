@@ -1,0 +1,34 @@
+Index: fileNameParse.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import os\r\n\r\n# Folder Path\r\nFOLDER_PATH = r'C:\\\\Users\\\\alnaf\\\\Perser\\\\perses-main-data-new CEF\\\\data\\\\FileName2Parse'\r\n\r\n\r\n# NEED TO RECIEVE FILES PATH OR NAME AS PARAM (?)\r\ndef listDir(dir):\r\n\r\n    fileNames = os.listdir(dir)\r\n    name, type = os.path.splitext(fileNames[0])\r\n    fileArray = name.split('-')\r\n    fileDic = {\r\n        \"tube_sn\": fileArray[0],\r\n        \"analyzer_id\": fileArray[1],\r\n        \"internal_standards_set_id\": fileArray[2],\r\n        \"injection_pos\": fileArray[3],\r\n        \"time_analysis\": fileArray[4],\r\n        \"not_sure\": fileArray[5],\r\n    }\r\n    return fileDic;\r\n\r\n\r\nif __name__ == '__main__':\r\n    fileDic = listDir(FOLDER_PATH)\r\n    print(fileDic)
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/fileNameParse.py b/fileNameParse.py
+--- a/fileNameParse.py	(revision d03f731817b9d91e5b9843ad7fb8bad7a24c66ec)
++++ b/fileNameParse.py	(date 1660997499734)
+@@ -16,11 +16,18 @@
+         "internal_standards_set_id": fileArray[2],
+         "injection_pos": fileArray[3],
+         "time_analysis": fileArray[4],
+-        "not_sure": fileArray[5],
+     }
+-    return fileDic;
++    # Handler for the * section of file name
++    if len(fileArray) > 5:
++        numOfChar = 0
++        for i in range(5):
++            numOfChar += len(fileArray[i]) + 1
++
++    print(name[numOfChar:len(name)])
++
++    return fileDic
+ 
+ 
+ if __name__ == '__main__':
+-    fileDic = listDir(FOLDER_PATH)
+-    print(fileDic)
+\ No newline at end of file
++    Dic = listDir(FOLDER_PATH)
++    print(Dic)

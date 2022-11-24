@@ -22,14 +22,35 @@ curser = mydb.cursor()
 # ON FOLDER CHANGE
 def getFileDic():
     # "tube_sn","time_analysis","analyzer_id","injection_pos","injection_pos","not_sure":
-    Dic = fileNameParse.listDir(fileNameParse.FOLDER_PATH)
-    print(Dic)
-    return Dic
+    dic = fileNameParse.list_dir(fileNameParse.FOLDER_PATH)
+    print(dic)
+    return dic
 
 
 # Latest tube_sn's test
-def getLatestTestByTubeSn(tube_sn):
+def get_typeid(tube_sn, invivo=[], invitro=[]):
     curser.execute("""SELECT * 
+                        FROM InvitroMeasurements,
+                             WHERE tube_sn=%s AND (`time_collection_end`) IN
+                                (SELECT MAX(time_collection_end) 
+                                    FROM InvitroMeasurements )""",
+                   (tube_sn,))
+
+    invitro = curser.fetchall()[0][0]
+    curser.execute("""SELECT * 
+                        FROM InvivoMeasurement,
+                             WHERE tube_sn=%s AND (`time_collection_end`) IN
+                                (SELECT MAX(time_collection_end) 
+                                    FROM InvivoMeasurements)""",
+                   (tube_sn,))
+    invivo = curser.fetchall()[0][0] # check what column is time_start
+    res = invivo[0] > invitro[0] ? False : True   # If invivo's time > invitro's time : return 0, else 1
+    return res
+
+
+
+def getLatestTestByTubeionilalaSn(tube_sn):
+    curser.execute("""SELECT measurment_id 
                         FROM InvivoMeasurement,InvitroMeasurements
                              WHERE tube_sn=%s AND (`experiment_id`,`end_time`) IN
                                 (SELECT experiment_id,MAX(end_time) 
@@ -37,14 +58,21 @@ def getLatestTestByTubeSn(tube_sn):
                    (tube_sn,))
     return curser.fetchall()[0][0]
 
+def getLatestTestByTubeionilalaSn(measurment_id):
+    curser.execute("""SELECT type_id 
+                        FROM Measurment
+                             WHERE id=%s""",
+                   (measurment_id,))
+    return curser.fetchall()[0][0]
 
+type_id = getLatestTestByTubeionilalaSn(getLatestTestByTubeionilalaSn(tube_sn))
 # Iterate measurement id:
 def getMeasurementId():
     curser.execute("SELECT MAX(id) FROM Measurement ")
     curr_id = curser.fetchall()[0][0]
     measurement_id = (curr_id + 1) if curr_id else 1  # Check if Measurement Table is empty to initialize iterator
     print(measurement_id)
-    return measurement_id;
+    return measurement_id
 
 
 # Create MEASUREMENT
@@ -67,7 +95,7 @@ def insertMeasurement(measurement_id, type_id, era_id, time_analysis, internal_s
     curser.execute("INSERT INTO Measurement VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s)",
                    (measurement_id, type_id, era_id, time_analysis, internal_st, analyzer_id, injection_pos,
                     chromatogram, cef))
-    mydb.commit();
+    mydb.commit()
 
 
 # MEANWHILE USE THIS FUNC FOR THE TEST
@@ -76,7 +104,7 @@ def insertMeasurementTEST(measurement_id, time_analysis, analyzer_id, injection_
                                VALUES (%s,%s,%s,%s,%s)""",
                    (measurement_id, time_analysis, analyzer_id, injection_pos, internal_st))
 
-    mydb.commit();
+    mydb.commit()
 
 
 #Insert Measurement TYPE - NOT SURE HOW TO GET TYPE_ID
@@ -84,7 +112,7 @@ def insertMeasurementType(measurement_id, type_id=1):
     curser.execute("""INSERT INTO MeasurementType (id,type) 
                                  VALUES (%s,%s)""",
                    (measurement_id, type_id))
-    mydb.commit();
+    mydb.commit()
 
 
 # Insert ERA time and era_id - NOT SURE HOW TO GET TIME AND ERA_ID
@@ -92,7 +120,7 @@ def insertEra(time_analysis, era_id=1):
     curser.execute("""INSERT INTO era (id,date_start) 
                                  VALUES (%s,%s)""",
                    (era_id, time_analysis))
-    mydb.commit();
+    mydb.commit()
 
 
 # Insert internal Standard - NOT SURE ABOUT INTERNAL_STANDARD_ID
@@ -100,12 +128,12 @@ def insertInternalStandard(measurement_id, internal_standards_set, analyzer_id):
     curser.execute("""INSERT INTO internalstandard (id,analyzer_id) 
                                      VALUES (%s,%s)""",
                    (measurement_id, analyzer_id))
-    mydb.commit();
+    mydb.commit()
 
     curser.execute("""INSERT INTO internalstandardsset (id,internal_standard_id) 
                                  VALUES (%s,%s)""",
                    (internal_standards_set, measurement_id))
-    mydb.commit();
+    mydb.commit()
 
 
 #Insert Analyzer - Analyzer ID from file name
@@ -113,10 +141,7 @@ def insertAnalyzer(analyzer_id, brand=1):
     print(analyzer_id)
     query = "INSERT INTO analyzer (id,brand) VALUES (%s,%s)"
     curser.execute(query, (analyzer_id, brand))
-    mydb.commit();
-
-
-
+    mydb.commit()
 
 
 # Update latest test's measurement_id (cross reference)
@@ -140,10 +165,10 @@ def getMeasurementByTubeSn(tube_sn):
 def cross_reference_maintenance(tube_sn_list):
     for tube_sn in tube_sn_list:
         measurement = getMeasurementByTubeSn(tube_sn)
-        inv_test = getLatestTestByTubeSn(tube_sn)
+        inv_test = get_typeid(tube_sn)
         if measurement.time_stamp < inv_test.time_stamp:
             measurement.time_stamp = inv_test.time_stamp
-            measurement.type_id = inv_test.type_id;
+            measurement.type_id = inv_test.type_id
             inv_test.measurement_id = measurement.id
 
 
@@ -151,14 +176,14 @@ def cross_reference_maintenance(tube_sn_list):
 def handleNewFile():
     # IN PARAMETERS : SHOULD GET NEW FILE NAME FROM FILE MONITOR
     # MUST INSERT VALUES IN THIS ORDER BECAUSE OF FOREIGN KEYS DEPENDENCIES
-    fileDic = getFileDic()
-    currID = getMeasurementId()
-    insertAnalyzer(fileDic["analyzer_id"])
-    insertInternalStandard(currID, fileDic["internal_standards_set"], fileDic["analyzer_id"])
-    insertEra(fileDic["analyzer_id"])
-    insertMeasurementType(currID)
-    insertMeasurementTEST(currID, fileDic["time_analysis"], fileDic["analyzer_id"],
-                          fileDic["injection_pos"], fileDic["internal_standards_set"])
+    file_dic = getFileDic()
+    curr_id = getMeasurementId()
+    insertAnalyzer(file_dic["analyzer_id"])
+    insertInternalStandard(curr_id, file_dic["internal_standards_set"], file_dic["analyzer_id"])
+    insertEra(file_dic["analyzer_id"])
+    insertMeasurementType(curr_id)
+    insertMeasurementTEST(curr_id, file_dic["time_analysis"], file_dic["analyzer_id"],
+                          file_dic["injection_pos"], file_dic["internal_standards_set"])
 
 
 if __name__ == '__main__':
