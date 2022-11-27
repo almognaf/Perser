@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d9e65f5-3496-4d5c-8d2a-3718cffedd19" name="Changes" comment="Some Fixes 04/Sep/2022">
+    <list default="true" id="9d9e65f5-3496-4d5c-8d2a-3718cffedd19" name="Changes" comment="Optimization + Documentation for xlsxtojson.py">
+      <change afterPath="$PROJECT_DIR$/Reports/rawdata.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/folderMonitor.py" beforeDir="false" afterPath="$PROJECT_DIR$/folderMonitor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rawdata.xlsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/xlsxtojson.py" beforeDir="false" afterPath="$PROJECT_DIR$/xlsxtojson.py" afterDir="false" />
     </list>
-    <list id="23f7ce61-84fa-42f5-a2ff-abfdca376022" name="Changes by natit" comment="Some Fixes 04/Sep/2022" />
+    <list id="23f7ce61-84fa-42f5-a2ff-abfdca376022" name="Changes by natit" comment="Some Fixes 04/Sep/2022">
+      <change beforePath="$PROJECT_DIR$/folderMonitor.py" beforeDir="false" afterPath="$PROJECT_DIR$/folderMonitor.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,6 +29,16 @@
   <component name="Git.Settings">
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/folderMonitor.py">
+      <ranges>
+        <range start1="1" end1="2" start2="1" end2="2" changelist="23f7ce61-84fa-42f5-a2ff-abfdca376022" />
+        <range start1="7" end1="8" start2="7" end2="7" changelist="9d9e65f5-3496-4d5c-8d2a-3718cffedd19" />
+        <range start1="14" end1="16" start2="13" end2="16" changelist="23f7ce61-84fa-42f5-a2ff-abfdca376022" />
+        <range start1="18" end1="19" start2="18" end2="19" changelist="23f7ce61-84fa-42f5-a2ff-abfdca376022" />
+      </ranges>
+    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -49,6 +63,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\alnaf\Perser\Reports" />
+      <recent name="C:\Users\alnaf\Perser" />
       <recent name="C:\Users\natanel\Desktop\Perser\perses-main-data-new CEF" />
     </key>
   </component>
@@ -216,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662320226255</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Optimization + Documentation for xlsxtojson.py">
+      <created>1669325301075</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1669325301075</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -249,6 +272,7 @@
     <MESSAGE value="Restructured the code for better readability &#10;+&#10;Added a main class for initiating" />
     <MESSAGE value="Changes by natit" />
     <MESSAGE value="Some Fixes 04/Sep/2022" />
-    <option name="LAST_COMMIT_MESSAGE" value="Some Fixes 04/Sep/2022" />
+    <MESSAGE value="Optimization + Documentation for xlsxtojson.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Optimization + Documentation for xlsxtojson.py" />
   </component>
 </project>

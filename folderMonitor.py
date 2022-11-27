@@ -5,7 +5,6 @@ from watchdog.observers import Observer
 
 
 # TODO: Make event handle parsing,Check for edge cases
-from Main_Perser import *
 
 
 class MyEventHandler(FileSystemEventHandler):
