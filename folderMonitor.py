@@ -1,5 +1,5 @@
 import time
-
+import xlsxtojson
 from watchdog.events import FileSystemEventHandler
 from watchdog.observers import Observer
 
@@ -11,11 +11,12 @@ class MyEventHandler(FileSystemEventHandler):
 
     def on_created(self, event):
         file_name = str(event.src_path)
-        initiate = MainPerser(file_name)
-        print(initiate.filename)
+        xlsxtojson.xlsx_to_json(file_name)
+        return print("Created")
+        # http request with result's json
 
 
-path = 'C:/Users/alnaf/Perser/perses-main-data-new CEF/data/test'
+path = 'C:/Users/alnaf/Perser/Reports'
 print(path)
 event_handler = MyEventHandler()
 observer = Observer()
