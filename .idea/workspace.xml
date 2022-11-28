@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d9e65f5-3496-4d5c-8d2a-3718cffedd19" name="Changes" comment="Optimization + Documentation for xlsxtojson.py">
-      <change afterPath="$PROJECT_DIR$/Reports/rawdata.xlsx" afterDir="false" />
+    <list default="true" id="9d9e65f5-3496-4d5c-8d2a-3718cffedd19" name="Changes" comment="completion of the recursive monitor + xlsx to Json">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/folderMonitor.py" beforeDir="false" afterPath="$PROJECT_DIR$/folderMonitor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rawdata.xlsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/xlsxtojson.py" beforeDir="false" afterPath="$PROJECT_DIR$/xlsxtojson.py" afterDir="false" />
     </list>
     <list id="23f7ce61-84fa-42f5-a2ff-abfdca376022" name="Changes by natit" comment="Some Fixes 04/Sep/2022">
@@ -29,16 +26,6 @@
   <component name="Git.Settings">
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/folderMonitor.py">
-      <ranges>
-        <range start1="1" end1="2" start2="1" end2="2" changelist="23f7ce61-84fa-42f5-a2ff-abfdca376022" />
-        <range start1="7" end1="8" start2="7" end2="7" changelist="9d9e65f5-3496-4d5c-8d2a-3718cffedd19" />
-        <range start1="14" end1="16" start2="13" end2="16" changelist="23f7ce61-84fa-42f5-a2ff-abfdca376022" />
-        <range start1="18" end1="19" start2="18" end2="19" changelist="23f7ce61-84fa-42f5-a2ff-abfdca376022" />
-      </ranges>
-    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -68,7 +55,7 @@
       <recent name="C:\Users\natanel\Desktop\Perser\perses-main-data-new CEF" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.folderMonitor">
     <configuration name="fileNameParser" type="PythonConfigurationType" factoryName="Python">
       <module name="Perser" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -239,7 +226,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669325301075</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="completion of the recursive monitor + xlsx to Json">
+      <created>1669559400454</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1669559400454</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -273,6 +267,7 @@
     <MESSAGE value="Changes by natit" />
     <MESSAGE value="Some Fixes 04/Sep/2022" />
     <MESSAGE value="Optimization + Documentation for xlsxtojson.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Optimization + Documentation for xlsxtojson.py" />
+    <MESSAGE value="completion of the recursive monitor + xlsx to Json" />
+    <option name="LAST_COMMIT_MESSAGE" value="completion of the recursive monitor + xlsx to Json" />
   </component>
 </project>
